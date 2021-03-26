@@ -145,12 +145,14 @@ h2
 	border-radius: 50px;
 	display: flex;
 	align-items: center;
+	transition: 0.5s;
 }
 
 .bouton_filtres:hover
 {
 	background-color: #DEEBFF;
-	transition: background-color 0.5s;
+	transition: 0.5s;
+	transform: scale(1.2);
 }
 
 .filtres p
@@ -237,6 +239,23 @@ h2
 	margin: 20px;
 	border-radius: 20px;
 	padding: 6px;
+	transition: 0.5s;
+}
+
+.hebergement a
+{
+	text-decoration: none;
+}
+
+.hebergement a:visited
+{
+	color: black;
+}
+
+.hebergement:hover
+{
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 
 .hebergement img
@@ -286,13 +305,29 @@ h2
 
 .populaire
 {
-	width: 100%;
-    height: auto;
     background-color: white;
     margin: 20px;
     padding: 4px;
     border-radius: 20px;
     display: flex;
+    transition: 0.5s;
+}
+
+.populaire a
+{
+	text-decoration: none;
+	display: flex;
+}
+
+.populaire a:visited
+{
+	color: black;
+}
+
+.populaire:hover
+{
+	transform: scale(1.05);
+	transition: 0.5s;
 }
 
 .populaire img
