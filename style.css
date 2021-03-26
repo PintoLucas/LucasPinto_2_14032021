@@ -34,6 +34,7 @@ header
 	display: flex;
 	justify-content: space-between;
 }
+
 nav
 {
 	display: flex;
@@ -75,7 +76,7 @@ nav a:hover
 
 .recherche_ville
 {
-	display: flex;
+	display: inline-flex;
 	justify-content: flex-start;
 }
 
@@ -99,6 +100,12 @@ nav a:hover
 	color: white;
 	border-radius: 0 10px 10px 0;
 	padding: 12px;
+	display: flex;
+}
+
+.recherche_ville a
+{
+	text-decoration: none;
 }
 
 h1
@@ -283,8 +290,8 @@ h2
     height: auto;
     background-color: white;
     margin: 20px;
+    padding: 4px;
     border-radius: 20px;
-    padding: 6px;
     display: flex;
 }
 
@@ -301,6 +308,11 @@ h2
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
+}
+
+.texte_populaire h3
+{
+	margin-bottom: 10px;
 }
 
 .texte_populaire .etoiles
