@@ -40,12 +40,16 @@ nav
 	display: flex;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 nav a
 {
 	padding: 30px;
 	border-top: 2px solid white;
 	color: #0065FC;
-	text-decoration: none;
 }
 
 nav a:hover
@@ -101,11 +105,6 @@ nav a:hover
 	border-radius: 0 10px 10px 0;
 	padding: 12px;
 	display: flex;
-}
-
-.recherche_ville a
-{
-	text-decoration: none;
 }
 
 h1
@@ -243,16 +242,6 @@ h2
 	box-shadow: 0 0 10px #909090;
 }
 
-.hebergement a
-{
-	text-decoration: none;
-}
-
-.hebergement a:visited
-{
-	color: black;
-}
-
 .hebergement:hover
 {
 	transform: scale(1.1);
@@ -308,23 +297,16 @@ h2
     box-shadow: 0 0 10px #909090;
 }
 
-.populaire a
-{
-	text-decoration: none;
-	display: flex;
-}
-
-.populaire a:visited
-{
-	color: black;
-}
-
 .populaire:hover
 {
 	transform: scale(1.05);
 	transition: 0.5s;
 }
 
+.populaire a
+{
+	display: flex;
+}
 .populaire img
 {
 	width: 30%;
@@ -356,25 +338,34 @@ h2
 {
 	display: grid;
 	grid-template-rows: : 50% 50%;
-	grid-template-columns: : 25% 25% 25% 25% ;
+	grid-template-columns: : 25% 25% 25% 25%;
+	column-gap: 3%;
 }
 
 #activites img
 {
 	width: 100%;
-	height: 1000px;
+	height: 80%;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 }
 
 .activite1, .activite2, .activite3, .activite4, .activite5, .activite6
 {
-	padding: 10px;
-	border: solid red 1px;
-	border-radius: 20px;
-	width: 80%;
+	width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #909090;
 }
 
+.activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover
+{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
 .activite1
 {
 	grid-column: 1;
@@ -426,8 +417,6 @@ footer
 
 .bas_page a
 {
-	text-decoration: none;
-	color: black;
 	display: flex;
 	padding: 10px 0 0 0;
 }
