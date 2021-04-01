@@ -64,7 +64,11 @@ nav a:hover
 	border-top: 2px solid #0065FC;
 }
 
-.sinscrire
+.nav_activites
+{
+	color: black;
+}
+.nav_sinscrire
 {
 	font-family: RalewayBold;
 }
@@ -72,7 +76,6 @@ nav a:hover
 .logo
 {
 	width: 100px;
-	min-width: 50px;
 	height: auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -80,7 +83,7 @@ nav a:hover
 
 .recherche_ville
 {
-	display: inline-flex;
+	display: flex;
 	justify-content: flex-start;
 }
 
@@ -128,12 +131,14 @@ h2
 	margin-bottom: 30px;
 	font-family: 'RalewayBold';
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .filtres div
 {
 	display: flex;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .bouton_filtres
@@ -407,8 +412,8 @@ h2
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	position: absolute;
 	border-radius: 20px 20px 0 0;
+	position: absolute;
 }
 
 footer
@@ -440,6 +445,18 @@ footer
 
 @media (max-width: 1600px)
 {
+
+	header
+	{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	main
+	{
+		margin: 30px;
+	}
+
 	.hebergement
 	{
 		width: 40%;
@@ -513,5 +530,56 @@ footer
 	{
 		grid-column: 3;
 		grid-row: 2;
+	}
+}
+
+@media (max-width: 650px)
+{
+
+	.hebergement
+	{
+		width: 100%;
+	}
+
+	#activites
+	{
+		grid-template-rows: repeat(6, 200px);
+		grid-template-columns: 1fr;
+	}
+
+	.activite1
+	{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.activite2
+	{
+		grid-row: 2;
+		grid-column: 1;
+	}
+
+	.activite3
+	{
+		grid-row: 3;
+		grid-column: 1;
+	}
+
+	.activite4
+	{
+		grid-row: 4;
+		grid-column: 1;
+	}
+
+	.activite5
+	{
+		grid-row: 5;
+		grid-column: 1;
+	}
+
+	.activite6
+	{
+		grid-row: 6;
+		grid-column: 1;
 	}
 }
