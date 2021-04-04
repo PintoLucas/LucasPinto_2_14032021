@@ -439,6 +439,7 @@ footer
 {
 	background-color: #F2F2F2;
 	width: 100%;
+	max-width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -686,13 +687,12 @@ footer
 	{
 		flex-direction: column;
 		align-items: center;
-		padding: 30px;
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.bas_page
 	{
 		width: 100%;
-		padding: 30px 0px 30px 0;
+		padding: 30px 0px 30px 30px;
 	}
 }
