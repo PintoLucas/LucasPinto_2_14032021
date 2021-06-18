@@ -16,6 +16,8 @@
   src: url("fonts/Raleway-Bold.ttf") format("truetype");
 }
 
+/* Whole page CSS */
+/* To align every element, I removed the base margins and the paddings */
 *
 {
 	margin: 0;
@@ -27,9 +29,9 @@ main, header
 	margin: 0 50px 0 50px;
 }
 
+/* Display grid in order to be able to rearrange the elements on mobile */
 header
 {
-
 	display: grid;
 	grid-template-columns: 200px 1fr 300px 150px;
 	grid-template-rows: 100px;
@@ -53,6 +55,15 @@ h1, h2
 	margin-bottom: 15px;
 }
 
+.logo
+{
+	width: 100px;
+	height: auto;
+	grid-column: 1;
+	margin-top: 15px;
+}
+
+/* Nav CSS */
 nav
 {
 	color: #0065FC;
@@ -71,14 +82,6 @@ nav a, .sinscrire
 nav a:hover, .sinscrire:hover
 {
 	border-top: 3px solid #0065FC;
-}
-
-.logo
-{
-	width: 100px;
-	height: auto;
-	grid-column: 1;
-	margin-top: 15px;
 }
 
 .nav_hebergements, .nav_activites, .sinscrire
@@ -100,6 +103,7 @@ nav a:hover, .sinscrire:hover
 	color: #0065FC;
 }
 
+/* Search area */
 .recherche h2
 {
 	font-size: 1em;
@@ -221,6 +225,7 @@ nav a:hover, .sinscrire:hover
 	padding-left: 8px;
 }
 
+/* Div article + aside */
 .hebergements_populaires
 {
 	display: flex;
@@ -359,6 +364,7 @@ nav a:hover, .sinscrire:hover
 	align-items: flex-end;
 }
 
+/* Grid "Activités à Marseille" */
 #liste_activites 
 {
 	display: grid;
@@ -388,6 +394,7 @@ nav a:hover, .sinscrire:hover
 	padding: 20px;
 }
 
+/* Each grid element position */
 .activite1 
 {
 	grid-column: 1;
@@ -440,6 +447,7 @@ nav a:hover, .sinscrire:hover
 	position: absolute;
 }
 
+/* Footer CSS */
 footer
 {
 	background-color: #F2F2F2;
@@ -468,6 +476,9 @@ footer
 	padding: 0 0 20px 0;
 }
 
+/* Beginning of the media queries */
+
+/* max-width 1600px : few adjustments*/
 @media (max-width: 1600px)
 {
 
@@ -488,6 +499,7 @@ footer
 	}
 }
 
+/* max-width 1200px for tablet */
 @media (max-width: 1200px)
 {
 	.hebergements_populaires
@@ -515,6 +527,7 @@ footer
 		grid-template-columns: repeat(3, 1fr); 
 	}
 
+	/* Rearrangement of the grid elements */
 	.activite1
 	{
 		grid-column: 1;
@@ -558,7 +571,7 @@ footer
 	}
 }
 
-
+/* max-width 700px for mobile phone */
 @media (max-width: 700px)
 {
 	main
@@ -687,6 +700,7 @@ footer
 		grid-template-columns: 1fr;
 	}
 
+		/* Rearrangement of the grid elements */
 	.activite1
 	{
 		grid-row: 1;
@@ -723,6 +737,7 @@ footer
 		grid-column: 1;
 	}
 
+	/* Vertical display for the footer */
 	footer
 	{
 		flex-direction: column;
